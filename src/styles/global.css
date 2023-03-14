@@ -1,0 +1,474 @@
+html,
+body {
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    height: 100vh;
+    scrollbar-width: thin;
+    overflow: scroll;
+}
+
+.bg-purple {
+    background: url('../../public/assets/images/bg-purple.png');
+}
+
+.ovrl {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3071603641456583) 3%, rgba(6, 35, 56, 0) 100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+}
+
+button.wallet-adapter-button {
+    background: #7e3af2 !important;
+}
+
+@font-face {
+    font-family: 'Gobold Hollow Bold';
+    src: url('../../public/fonts/Gobold-Hollow-Bold.eot');
+    src: url('../../public/fonts/Gobold-Hollow-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../public/fonts/Gobold-Hollow-Bold.woff2') format('woff2'),
+        url('../../public/fonts/Gobold-Hollow-Bold.svg#Gobold Hollow Bold') format('svg');
+}
+
+@font-face {
+    font-family: 'Gobold Bold';
+    src: url('../../public/fonts/Gobold-Bold.eot');
+    src: url('../../public/fonts/Gobold-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../public/fonts/Gobold-Bold.woff2') format('woff2'),
+        url('../../public/fonts/Gobold-Bold.woff') format('woff'),
+        url('../../public/fonts/Gobold-Bold.svg#Gobold Bold') format('svg');
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+.border-font {
+    font-family: 'Gobold Hollow Bold' !important;
+}
+
+.boldfont {
+    font-family: 'Gobold Bold' !important;
+}
+
+@keyframes flicker {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
+        text-shadow:
+            0 0 4px #80C5E9,
+            0 0 11px #80C5E9,
+            0 0 19px #80C5E9,
+            0 0 40px #80C5E9,
+            0 0 60px #80C5E9,
+            0 0 70px #79c1e8,
+            0 0 80px #52c2ff,
+            0 0 100px #32aef0;
+
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+@keyframes flickerorange {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
+        text-shadow:
+            0 0 4px #FE9A24,
+            0 0 11px #FE9A24,
+            0 0 19px #FE9A24,
+            0 0 40px #FE9A24,
+            0 0 60px #FE9A24,
+            0 0 70px #FE9A24,
+            0 0 80px #fc9013,
+            0 0 100px #fc8d0d;
+
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+@keyframes flickerpurple {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
+        text-shadow:
+            0 0 4px #9A80B4,
+            0 0 11px #9A80B4,
+            0 0 19px #9A80B4,
+            0 0 40px #9A80B4,
+            0 0 60px #9A80B4,
+            0 0 70px #9A80B4,
+            0 0 80px #a476d3,
+            0 0 100px #b077e9;
+
+    }
+
+    20%,
+    24%,
+    30%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+@keyframes lucci {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
+        text-shadow:
+            0 0 4px #bed06c,
+            0 0 11px #bed06c,
+            0 0 19px #bed06c,
+            0 0 40px #bed06c,
+            0 0 60px #bed06c,
+            0 0 70px #bed06c,
+            0 0 80px #c4e33b,
+            0 0 100px #c6e347;
+
+    }
+
+    20%,
+    24%,
+    30%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+
+@keyframes flyn {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
+        text-shadow:
+            0 0 4px #D05150,
+            0 0 11px #D05150,
+            0 0 19px #D05150,
+            0 0 40px #D05150,
+            0 0 60px #D05150,
+            0 0 70px #D05150,
+            0 0 80px #de4848,
+            0 0 100px #e83131;
+
+    }
+
+    20%,
+    24%,
+    30%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+@keyframes tshala {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
+        text-shadow:
+            0 0 4px #6AB5D3,
+            0 0 11px #6AB5D3,
+            0 0 19px #6AB5D3,
+            0 0 40px #6AB5D3,
+            0 0 60px #6AB5D3,
+            0 0 70px #6AB5D3,
+            0 0 80px #52accf,
+            0 0 100px #4bbae6;
+
+    }
+
+    20%,
+    24%,
+    30%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+
+@keyframes greeneneo {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
+        text-shadow:
+            0 0 4px #A9F99C,
+            0 0 11px #A9F99C,
+            0 0 19px #A9F99C,
+            0 0 40px #A9F99C,
+            0 0 60px #A9F99C,
+            0 0 70px #A9F99C,
+            0 0 80px #6ee35c,
+            0 0 100px #77e366;
+
+    }
+
+    20%,
+    24%,
+    30%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+@keyframes atitty {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
+        text-shadow:
+            0 0 4px #A16C75,
+            0 0 11px #A16C75,
+            0 0 19px #A16C75,
+            0 0 40px #A16C75,
+            0 0 60px #A16C75,
+            0 0 70px #A16C75,
+            0 0 80px #ae6e79,
+            0 0 100px #b66d79;
+
+    }
+
+    20%,
+    24%,
+    30%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+
+@keyframes delling {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
+        text-shadow:
+            0 0 4px #EDB765,
+            0 0 11px #EDB765,
+            0 0 19px #EDB765,
+            0 0 40px #EDB765,
+            0 0 60px #EDB765,
+            0 0 70px #EDB765,
+            0 0 80px #e6a748,
+            0 0 100px #ebac4d;
+
+    }
+
+    20%,
+    24%,
+    30%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+
+
+.dellingText {
+    animation: delling 10s infinite alternate;
+    color: #fff;
+}
+
+.atittyText {
+    animation: atitty 10s infinite alternate;
+    color: #fff;
+}
+
+.greenText {
+    animation: greeneneo 10s infinite alternate;
+    color: #fff;
+}
+
+.tshalaText {
+    animation: tshala 10s infinite alternate;
+    color: #fff;
+}
+
+.flynnText {
+    animation: flyn 10s infinite alternate;
+    color: #fff;
+}
+
+.lucciText {
+    animation: lucci 10s infinite alternate;
+    color: #fff;
+}
+
+.neonText {
+    animation: flicker 10s infinite alternate;
+    color: #fff;
+}
+
+.neonTextorange {
+    animation: flickerorange 10s infinite alternate;
+    color: #fff;
+}
+
+.neonTextpurple {
+    animation: flickerpurple 10s infinite alternate;
+    color: #fff;
+}
+
+.glass {
+    /* From https://css.glass */
+    background: rgba(15, 23, 42, 0.64);
+    box-shadow: 0 4px 30px #DF695B;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.wallet-adapter-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100% !important;
+    display: flex !important;
+    justify-items: center;
+    align-items: center;
+    font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px !important;
+    line-height: 48px;
+    text-align: center;
+    padding: 0 24px;
+    border-radius: 4px;
+}
+
+.wallet-adapter-dropdown-list {
+    position: absolute;
+    z-index: 99;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-row-gap: 10px;
+    padding: 10px;
+    top: 100%;
+    width: 100% !important;
+    right: 0;
+    margin: 0;
+    list-style: none;
+    background: #2c2d30;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease, transform 200ms ease, visibility 200ms;
+    font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.wallet-adapter-dropdown {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+
+.allapp::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.allapp {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+.swiper-button-disabled {
+    opacity: 50% !important;
+    cursor: not-allowed;
+}
